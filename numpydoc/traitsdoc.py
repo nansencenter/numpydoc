@@ -68,6 +68,8 @@ class SphinxTraitsDoc(SphinxClassDoc):
             'Methods': [],
             'See Also': [],
             'Notes': [],
+            'Creates': [],
+            'Modifies': [],
             'References': '',
             'Example': '',
             'Examples': '',
@@ -89,7 +91,7 @@ class SphinxTraitsDoc(SphinxClassDoc):
         out += self._str_summary()
         out += self._str_extended_summary()
         for param_list in ('Parameters', 'Traits', 'Methods',
-                           'Returns','Raises'):
+                           'Returns','Raises', 'Creates', 'Modifies'):
             out += self._str_param_list(param_list)
         out += self._str_see_also("obj")
         out += self._str_section('Notes')

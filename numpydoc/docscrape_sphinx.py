@@ -224,6 +224,8 @@ class SphinxDocString(NumpyDocString):
         out += self._str_summary()
         out += self._str_extended_summary()
         out += self._str_param_list('Parameters')
+        out += self._str_param_list('Creates')
+        out += self._str_param_list('Modifies')
         out += self._str_returns()
         for param_list in ('Other Parameters', 'Raises', 'Warns'):
             out += self._str_param_list(param_list)
